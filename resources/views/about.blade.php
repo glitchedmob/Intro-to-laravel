@@ -7,4 +7,3 @@
 <h1>About Us</h1>
 </body>
 </html>
-DB_DATABASE=homestead
