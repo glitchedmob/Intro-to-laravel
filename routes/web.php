@@ -12,5 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $tasks = [
+        'Go to the store',
+        'eat a dick',
+        'Fuck a giant fish'
+    ];
+    return view('welcome', compact('tasks'));
+});
+
+Route::get('/about', function() {
+    return view('about');
 });
