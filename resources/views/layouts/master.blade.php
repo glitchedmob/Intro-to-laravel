@@ -13,21 +13,26 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="/css/blog.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
 </head>
 
 <body>
 
     @include('layouts/nav')
+    <div class="blog-header">
+        <div class="container">
+            @yield('header')
+        </div>
+    </div>
 
-    @yield('header')
 
     <div class="container">
 
         <div class="row">
 
-
-        @yield('content')
+        <div class="col-sm-8 blog-main">
+            @yield('content')
+        </div><!-- /.blog-main -->
 
         @include('layouts/sidebar')
 
