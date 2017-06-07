@@ -22,7 +22,7 @@ class PostsController extends Controller
         return view("posts/index", compact('posts', 'archives'));
     }
 
-    public function show(Post $posts)
+    public function show(Post $post)
     {
         return view('posts/show', compact('post'));
     }
