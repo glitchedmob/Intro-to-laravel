@@ -113,7 +113,7 @@ return [
     */
 
     'markdown' => [
-        'theme' => 'default',
+        'theme' => 'Levi Zitting',
 
         'paths' => [
             resource_path('views/vendor/mail'),
